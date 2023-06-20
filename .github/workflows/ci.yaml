@@ -41,7 +41,7 @@ jobs:
         run: |
           git config --global user.name "Deploy Bot"
           git config --global user.email "no-reply@akuity.io"
-          git clone https://bot:${{ secrets.DEPLOY_PAT }}@github.com/${{ github.repository_owner }}/demo-app-deploy.git
+          git clone "https://bot:${{ secrets.DEPLOY_PAT }}@github.com/${{ github.repository_owner }}/demo-app-deploy.git"
           cd demo-app-deploy/env/dev
           kustomize edit set image ghcr.io/${{ github.repository_owner }}/demo-app:${{ github.sha }}
           git commit -a -m "chore(dev): deploy demo-app:${{ github.sha }}"
