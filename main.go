@@ -8,7 +8,7 @@ import (
 	"github.com/common-nighthawk/go-figure"
 )
 
-func main() {
+unc main() {
 	myFigure := figure.NewColorFigure("rodrigc is Awesome!!!", "larry3d", "yellow", true)
 	myFigure.Print()
 
