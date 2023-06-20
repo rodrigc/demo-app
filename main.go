@@ -8,7 +8,7 @@ import (
 	"github.com/common-nighthawk/go-figure"
 )
 
-unc main() {
+func main() {
 	myFigure := figure.NewColorFigure("rodrigc is Awesome!!!", "larry3d", "yellow", true)
 	myFigure.Print()
 
@@ -16,6 +16,7 @@ unc main() {
 		mySecretFigure := figure.NewColorFigure(fmt.Sprintf("Secret value is: %s", secret), "larry3d", "red", true)
 		mySecretFigure.Print()
 	}
-	
+	fmt.Printf("This is a BUG")
+
 	time.Sleep(10 * time.Hour)
 }
