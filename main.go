@@ -17,6 +17,7 @@ func main() {
 		mySecretFigure.Print()
 	}
 	fmt.Printf("This is a BUG")
+	fmt.Printf("This is a BUG 2")
 
 	time.Sleep(10 * time.Hour)
 }
